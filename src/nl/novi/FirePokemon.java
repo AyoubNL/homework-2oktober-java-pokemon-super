@@ -28,9 +28,10 @@ public class FirePokemon extends Pokemon {
         }
     }
 
-    public void defense(int waterresistance){
+    public void waterDefense(int waterresistance){
         if(waterresistance <50){
             System.out.println(super.getName() + " has been damaged");
+            damage(50);
         }
         else {
             System.out.println(super.getName() + " can resist water because it is a " + super.getType()+ "pokemen");
