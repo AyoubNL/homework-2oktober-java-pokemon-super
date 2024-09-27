@@ -15,7 +15,7 @@ public class Pokemon {
 
     public void damage(int damage){
         hp -= damage;
-        System.out.println(name + " " + " has new health score" + hp);
+        System.out.println(name +" " +"has new health score " + hp);
     }
 
     public void setName(String name) {

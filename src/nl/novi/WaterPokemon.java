@@ -14,25 +14,25 @@ public class WaterPokemon extends Pokemon {
 
     @Override
     public void speaks() {
-        System.out.println(super.getName() + " speaks " + super.getType());
+        System.out.println(super.getName() + " speaks " + super.getType()+ " language.");
     }
 
     public void sun() {
         if (sunlight) {
-            System.out.println(super.getName() + " cannot handle sunlight");
+            System.out.println(super.getName() + " cannot handle sunlight.");
             damage(50);
         } else {
-            System.out.println(super.getName() + " likes sunlight");
+            System.out.println(super.getName() + " likes sunlight.");
         }
     }
 
     public void fireDefense(int fireresistance){
         if(fireresistance <50){
-            System.out.println(super.getName() + " has been damaged");
+            System.out.println(super.getName() +" has been damaged.");
             damage(50);
         }
         else {
-            System.out.println(super.getName() + " can resist water because it is a " + super.getType()+ "pokemen");
+            System.out.println(super.getName() + " can resist water because it is a " + super.getType()+ " pokemen.");
         }
     }
 

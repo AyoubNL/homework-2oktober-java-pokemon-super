@@ -15,7 +15,7 @@ public class FirePokemon extends Pokemon {
 
     @Override
     public void speaks() {
-        System.out.println(super.getName() + " speaks " +super.getType());
+        System.out.println(super.getName() + " speaks " +super.getType()+ " language");
     }
 
 
@@ -34,7 +34,7 @@ public class FirePokemon extends Pokemon {
             damage(50);
         }
         else {
-            System.out.println(super.getName() + " can resist water because it is a " + super.getType()+ "pokemen");
+            System.out.println(super.getName() + " can resist water because it is a " + super.getType()+ " pokemen");
         }
     }
 

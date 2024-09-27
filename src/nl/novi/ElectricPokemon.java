@@ -13,15 +13,15 @@ public class ElectricPokemon extends Pokemon {
 
     @Override
     public void speaks() {
-        System.out.println(super.getName()+ " speaks" + super.getType());
+        System.out.println(super.getName()+ " speaks " + super.getType()+ " language.");
     }
 
     public void sound(){
-        System.out.println("This Pokemon makes "+sound);
+        System.out.println("This " +super.getName() + " makes "+sound+ " sound.");
     }
 
     public void eat(){
-        System.out.println("This pokemon eats "+food);
+        System.out.println("This " +super.getName() + " eats " +food);
     }
 
     public String getSound(){

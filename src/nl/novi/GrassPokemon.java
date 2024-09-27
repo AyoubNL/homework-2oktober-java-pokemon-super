@@ -6,31 +6,33 @@ public class GrassPokemon extends Pokemon {
 
     public GrassPokemon(String name, int level, int hp, boolean grassTerrain, boolean rain) {
         super(name, level, hp);
+        super.setType("Water");
+
         this.grassTerrain = grassTerrain;
         this.rain = rain;
     }
 
     @Override
     public void speaks() {
-        System.out.println(super.getName() + " speaks " + super.getType());
+        System.out.println(super.getName() + " speaks " + super.getType() + " language.");
     }
 
     public void terrain(boolean grassTerrain){
         if(grassTerrain){
-            System.out.println(super.getType() + "pokemon handle this terrain really good");
+            System.out.println(super.getType() + " pokemon handle this terrain really good.");
         }
         else{
-            System.out.println(super.getType() + "pokemon handle this terrain really bad");
+            System.out.println(super.getType() + "pokemon handle this terrain really bad.");
         }
     }
 
     public void weather(boolean rain){
 
         if(rain){
-            System.out.println(super.getName() + " really likes the weather");
+            System.out.println(super.getName() + " really like rainy weather.");
         }
         else{
-            System.out.println(super.getName() + " doesn't like the weather");
+            System.out.println(super.getName() + " doesn't like the weather.");
         }
 
     }
