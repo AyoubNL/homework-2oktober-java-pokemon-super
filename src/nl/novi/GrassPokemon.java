@@ -53,4 +53,8 @@ public class GrassPokemon extends Pokemon {
         this.rain = rain;
     }
 
+    public String toString(){
+        return super.getName()+ " - " +super.getType() +" pokemon";
+    }
+
 }

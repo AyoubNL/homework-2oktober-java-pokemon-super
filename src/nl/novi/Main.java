@@ -1,6 +1,8 @@
 package nl.novi;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,6 +29,17 @@ public class Main {
         bellossom.speaks();
         bellossom.terrain(bellossom.getGrassTerrain());
         bellossom.weather(bellossom.getRain());
+
+
+        List<Pokemon> pokemonList = new ArrayList<>();
+        pokemonList.add(pikachu);
+        pokemonList.add(charmander);
+        pokemonList.add(squirtle);
+        pokemonList.add(bellossom);
+
+        for (Pokemon p : pokemonList){
+           p.speaks();
+        }
     }
 
 

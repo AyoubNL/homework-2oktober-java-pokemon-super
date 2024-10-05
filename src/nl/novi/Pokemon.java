@@ -1,5 +1,5 @@
 package nl.novi;
-public class Pokemon {
+public abstract class Pokemon {
     private String name;
     private int level;
     private String type;

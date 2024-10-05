@@ -15,7 +15,7 @@ public class FirePokemon extends Pokemon {
 
     @Override
     public void speaks() {
-        System.out.println(super.getName() + " speaks " +super.getType()+ " language");
+        System.out.println(super.getName() + " speaks " +super.getType()+ " language.");
     }
 
 
